@@ -1,0 +1,192 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #0a0a0a;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #0a0a0a;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.botones {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.botones li {
+    display: inline;
+}
+
+.botones a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Sección de presentación */
+.hero {
+    text-align: left;
+    padding: 100px 50px;
+    max-width: 600px;
+}
+
+.intro {
+    color: #facc15;
+}
+
+.name {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.description {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Sección About */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.about-text {
+    width: 60%;
+}
+
+.about-photo img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+/* Sección Documentos */
+.docs {
+    padding: 50px;
+    text-align: center;
+}
+
+.docs h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de botones */
+.button-container {
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Botones de ciclo */
+.cycle-button {
+    background-color: white;
+    border: none;
+    padding: 12px 18px;
+    margin: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.cycle-button:hover {
+    background-color: #b52b27;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Contenedor de documentos */
+.docs-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Tarjeta de documento */
+.doc-item {
+    background: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.doc-item:hover {
+    transform: scale(1.05);
+}
+
+/* Imagen del documento */
+.doc-item img {
+    width: 100px;
+    height: auto;
+}
+
+/* Título del documento */
+.doc-title {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Precio del documento */
+.doc-price {
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #facc15;
+}
+/* Botón de compra */
+.buy-button {
+    background-color: #4CAF09;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Efecto al pasar el cursor */
+.buy-button:hover {
+    background-color: #1E7D09;
+}
+
+/* Botón rojo para documentos en desarrollo */
+.in-progress-button {
+    background-color: #D32F2F; /* Rojo */
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: not-allowed;
+}

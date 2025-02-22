@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="logo">José Moises</div>
+        <ul class="botones">
+            <li><a href="#about">About</a></li>
+            <li><a href="#docs">Docs</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de presentación -->
+    <section class="hero">
+        <p class="intro">Hola, mi nombre es</p>
+        <h1 class="name">José Moises</h1>
+        <p class="description">Soy estudiante de Computación e Informática que se dedica a crear documentación.</p>
+    </section>
+
+    <!-- Acerca de mí -->
+    <section id="about" class="about">
+        <div class="about-text">
+            <h2>Acerca de mí</h2>
+            <p>Hola, mi nombre es José Moises y soy Ingeniero de Sistemas y Computación. Soy una persona autodidacta con una pasión por el aprendizaje continuo y la exploración de nuevas tecnologías.</p>
+            <p>Actualmente, estoy explorando el desarrollo frontend para comprender mejor la creación de páginas web y ampliar mis habilidades en arquitectura web.</p>
+        </div>
+        <div class="about-photo">
+            <img src="tu-foto.jpg" alt="Mi foto">
+        </div>
+    </section>
+
+    <!-- Sección de Documentos -->
+    <section id="docs" class="docs">
+        <h2>Documentos Disponibles</h2>
+        <div class="button-container">
+            <button class="cycle-button" onclick="mostrarDocs(1)">Ciclo I</button>
+            <button class="cycle-button" onclick="mostrarDocs(2)">Ciclo II</button>
+            <button class="cycle-button" onclick="mostrarDocs(3)">Ciclo III</button>
+            <button class="cycle-button" onclick="mostrarDocs(4)">Ciclo IV</button>
+        </div>
+
+        <div id="docs-container" class="docs-container">
+            <!-- Los documentos se cargarán dinámicamente aquí -->
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
