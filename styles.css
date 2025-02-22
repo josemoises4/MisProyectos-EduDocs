@@ -16,11 +16,12 @@ body {
     background-color: #0a0a0a;
 }
 
+/*Aplico estilo a mi nombre en la esquina*/
 .logo {
     font-size: 20px;
     font-weight: bold;
 }
-
+/*Aplico estilos a mis botones de mi barra de navegación*/
 .botones {
     list-style: none;
     display: flex;
@@ -43,16 +44,18 @@ body {
     padding: 100px 50px;
     max-width: 600px;
 }
-
+/*Agrego estilos a mi escripccion*/
 .intro {
     color: #facc15;
 }
 
+/*Agrego estilos a mi nombre*/
 .name {
     font-size: 40px;
     font-weight: bold;
 }
 
+/*Agrego estilos a mi descripccion*/
 .description {
     font-size: 16px;
     margin-top: 10px;
@@ -65,11 +68,12 @@ body {
     justify-content: space-between;
     padding: 50px;
 }
-
+/*Ajusto el ancho de mi texto*/
 .about-text {
     width: 60%;
 }
 
+/*Ajusto el tamaño de mi foto*/
 .about-photo img {
     width: 200px;
     border-radius: 10px;
@@ -80,7 +84,7 @@ body {
     padding: 50px;
     text-align: center;
 }
-
+/* Sección Documentos afecta a todos los h2*/
 .docs h2 {
     font-size: 24px;
     margin-bottom: 20px;
@@ -108,7 +112,7 @@ body {
     cursor: pointer;
     transition: transform 0.3s, background-color 0.3s;
 }
-
+/*Botones de ciclo tiene un efecto al colocar el cursor por encima*/
 .cycle-button:hover {
     background-color: #b52b27;
     color: white;
@@ -133,7 +137,7 @@ body {
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease-in-out;
 }
-
+/*La tarjeta del documento se levanta pq tiene un efecto al pasar el cursor por encima*/
 .doc-item:hover {
     transform: scale(1.05);
 }
