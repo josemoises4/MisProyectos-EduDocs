@@ -42,15 +42,36 @@ function mostrarDocs(ciclo) {
 
         let buttonHTML = doc.enCurso
             ? `<button class="in-progress-button">En curso</button>`
-            : `<button class="buy-button" onclick="comprar('${doc.nombre}', '${doc.precio}')">Comprar</button>`;
+            : `<button class="buy-button" onclick="comprar('${doc.nombre}', '${doc.precio}')">Ver mas</button>`;
 
         docItem.innerHTML = `
             <img src="${doc.imagen}" alt="${doc.nombre}">
             <p class="doc-title">${doc.nombre}</p>
-            <p class="doc-price">s/ <b>${doc.precio}</b></p>
+            <p class="doc-price">S/ <b>${doc.precio}</b></p>
             ${buttonHTML}
         `;
 
         docsContainer.appendChild(docItem);
     });
 }
+
+function comprar(nombre, precio) {
+    window.location.href = `detalle.html?nombre=${encodeURIComponent(nombre)}&precio=${encodeURIComponent(precio)}`;
+}
+
+function generarBoton(doc) {
+    return `<button class="buy-button" onclick="verDetalle('${doc.nombre}', '${doc.precio}', '${doc.imagen}')">Ver más</button>`;
+}
+
+function verDetalle(nombre, precio, imagen) {
+    window.location.href = `detalle.html?nombre=${encodeURIComponent(nombre)}&precio=${encodeURIComponent(precio)}&imagen=${encodeURIComponent(imagen)}`;
+}
+
+document.getElementById("documentos").innerHTML = documentos.map(doc => `
+    <div class="documento">
+        <img src="${doc.imagen}" alt="${doc.nombre}">
+        <p class="doc-title">${doc.nombre}</p>
+        <p class="doc-price">s/ <b>${doc.precio}</b></p>
+        ${generarBoton(doc)}
+    </div>
+`).join("");

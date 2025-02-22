@@ -1,0 +1,72 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;  /* Alinea los elementos en la parte superior */
+    height: 100vh;
+    padding-left: 50px;  /* Desplaza la tarjeta hacia la izquierda */
+}
+
+
+.card {
+    background-color: #111;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.icono {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.precio {
+    color: yellow;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.info {
+    font-size: 14px;
+    color: white;
+    margin: 10px 0;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.button {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
