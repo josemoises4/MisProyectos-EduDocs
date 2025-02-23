@@ -21,6 +21,7 @@ body {
     font-size: 20px;
     font-weight: bold;
 }
+
 /*Aplico estilos a mis botones de mi barra de navegación*/
 .botones {
     list-style: none;
@@ -44,6 +45,7 @@ body {
     padding: 100px 50px;
     max-width: 600px;
 }
+
 /*Agrego estilos a mi escripccion*/
 .intro {
     color: #facc15;
@@ -68,6 +70,7 @@ body {
     justify-content: space-between;
     padding: 50px;
 }
+
 /*Ajusto el ancho de mi texto*/
 .about-text {
     width: 60%;
@@ -84,6 +87,7 @@ body {
     padding: 50px;
     text-align: center;
 }
+
 /* Sección Documentos afecta a todos los h2*/
 .docs h2 {
     font-size: 24px;
@@ -98,6 +102,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 10px;
+    flex-wrap: wrap;
 }
 
 /* Botones de ciclo */
@@ -112,6 +117,7 @@ body {
     cursor: pointer;
     transition: transform 0.3s, background-color 0.3s;
 }
+
 /*Botones de ciclo tiene un efecto al colocar el cursor por encima*/
 .cycle-button:hover {
     background-color: #b52b27;
@@ -137,6 +143,7 @@ body {
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease-in-out;
 }
+
 /*La tarjeta del documento se levanta pq tiene un efecto al pasar el cursor por encima*/
 .doc-item:hover {
     transform: scale(1.05);
@@ -161,6 +168,7 @@ body {
     font-weight: bold;
     color: #facc15;
 }
+
 /* Botón de compra */
 .buy-button {
     background-color: #4CAF09;
@@ -193,4 +201,58 @@ body {
     width: 100%;
     margin-top: 10px;
     cursor: not-allowed;
+}
+
+/* 📱 Responsividad para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+    .botones {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+    .hero {
+        text-align: center;
+        padding: 50px 20px;
+        max-width: 100%;
+    }
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+    .about-text {
+        width: 100%;
+    }
+    .about-photo img {
+        width: 150px;
+    }
+    .button-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+    .cycle-button {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 18px;
+    }
+    .botones a {
+        font-size: 16px;
+    }
+    .hero .name {
+        font-size: 32px;
+    }
+    .hero .description {
+        font-size: 14px;
+    }
+    .about-photo img {
+        width: 120px;
+    }
 }
