@@ -1,0 +1,68 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fondo negro */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Contenedor del formulario */
+.container {
+    background: #1e1e1e; /* Gris oscuro */
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    width: 280px; /* Más compacto */
+    text-align: center;
+}
+
+/* Título */
+h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffcc00; /* Amarillo dorado */
+}
+
+/* Grupo de entrada */
+.input-group {
+    margin-bottom: 10px;
+}
+
+/* Campos de entrada y select */
+input, select {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #2a2a2a; /* Gris oscuro */
+    color: #fff;
+    text-align: center;
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #aaa;
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #ffcc00; /* Amarillo */
+    color: #000;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background: #e6b800;
+}
