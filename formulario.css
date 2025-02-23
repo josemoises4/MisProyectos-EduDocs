@@ -1,8 +1,8 @@
 /* Estilos generales */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #121212; /* Fondo negro */
-    color: #fff;
+    background-color: #f0f2f5; /* Fondo claro */
+    color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12,57 +12,83 @@ body {
 
 /* Contenedor del formulario */
 .container {
-    background: #1e1e1e; /* Gris oscuro */
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-    width: 280px; /* Más compacto */
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
     text-align: center;
 }
 
-/* Título */
+/* Estilos del título */
 h2 {
-    font-size: 18px;
+    color: #007BFF; /* Azul Word */
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* Grupo de formularios */
+.form-group {
+    text-align: left;
     margin-bottom: 15px;
-    color: #ffcc00; /* Amarillo dorado */
+    display: flex;
+    flex-direction: column;
 }
 
-/* Grupo de entrada */
-.input-group {
-    margin-bottom: 10px;
+/* Etiquetas */
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #007BFF;
 }
 
-/* Campos de entrada y select */
+/* Inputs y select */
 input, select {
     width: 100%;
-    padding: 8px;
-    border: none;
+    padding: 10px;
+    border: 2px solid #007BFF;
     border-radius: 5px;
     font-size: 14px;
-    background-color: #2a2a2a; /* Gris oscuro */
-    color: #fff;
-    text-align: center;
+    background-color: #f8f9fa;
+    color: #333;
+    outline: none;
+    transition: 0.3s;
 }
 
-/* Placeholder */
-input::placeholder {
-    color: #aaa;
+/* Efecto al enfocar */
+input:focus, select:focus {
+    border-color: #0056b3;
+    background-color: #e9f0ff;
 }
 
 /* Botón */
 button {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
+    margin-top: 15px;
     border: none;
-    background: #ffcc00; /* Amarillo */
-    color: #000;
-    font-size: 15px;
+    background: #007BFF;
+    color: #fff;
+    font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
     font-weight: bold;
     transition: 0.3s ease-in-out;
 }
 
+/* Efecto hover */
 button:hover {
-    background: #e6b800;
+    background: #0056b3;
+}
+
+/* Corrección de alineación */
+.form-group input {
+    width: calc(99% - 20px); /* Ajuste para evitar desbordes */
+}
+
+/* Mejor alineación de etiquetas e inputs */
+.form-group label {
+    display: inline-block;
+    width: 100%;
 }

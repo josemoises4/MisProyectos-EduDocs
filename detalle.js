@@ -108,3 +108,9 @@ if (coloresCursos[cursoNormalizado] && contenidoDiv) {
     // Cambiar color de los títulos de las secciones
     document.documentElement.style.setProperty("--color-tema", colorCurso);
 }
+
+// Obtener el nombre del curso de la URL
+const nombreCurso = obtenerParametro("nombre");
+
+// Actualizar el botón "Comprar" con la URL que llevará al formulario
+document.getElementById("boton-comprar").href = `formulario.html?nombre=${encodeURIComponent(nombreCurso)}`;
