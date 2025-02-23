@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     mostrarDocs(3); // Cargar documentos del primer ciclo al entrar
-    showCycle('docs-container'); // Asegurar que se muestre el primer ciclo
+    //showCycle('docs-container'); // Asegurar que se muestre el primer ciclo
 });
 
 function mostrarDocs(ciclo) {
