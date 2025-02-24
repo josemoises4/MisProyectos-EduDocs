@@ -11,19 +11,87 @@ const cursoNormalizado = cursoSeleccionado.trim().toUpperCase(); // Normalizar p
 // Diccionario de contenidos por curso
 const contenidos = {
     "LENGUAJE DE PROGRAMACIÓN JAVA": [
-        { titulo: "INTRODUCCIÓN A JAVA", subtemas: ["Conceptos básicos", "Historia de Java"] },
-        { titulo: "SINTAXIS BÁSICA", subtemas: ["Variables y tipos de datos", "Estructuras de control"] },
-        { titulo: "PROGRAMACIÓN ORIENTADA A OBJETOS", subtemas: ["Clases y Objetos", "Encapsulación", "Herencia", "Polimorfismo"] }
-    ],
+    { 
+        "titulo": "CONFIGURACIÓN Y CONEXIÓN A BASE DE DATOS", 
+        "subtemas": [
+            "Instalación de MySQL y MySQL Workbench",
+            "Instalación de SQL Server y SQL Server Management Studio",
+            "Configuración de autenticación y credenciales del usuario SA",
+            "Creación y configuración de bases de datos en MySQL",
+            "Creación y administración de bases de datos en SQL Server",
+            "Gestión de usuarios y permisos",
+            "Conexión de MySQL con Java mediante JDBC",
+            "Conexión de SQL Server con Java",
+            "Prueba de conexión exitosa"
+        ] 
+    },
+    { 
+        "titulo": "PROGRAMACIÓN CRUD EN JAVA CON MYSQL Y SQL SERVER", 
+        "subtemas": [
+            "Inserción de datos (INSERT)",
+            "Consulta de registros con filtros y condiciones (SELECT + WHERE)",
+            "Actualización de datos (UPDATE)",
+            "Eliminación de registros (DELETE)",
+            "Ordenamiento de resultados con ORDER BY",
+            "Manejo de fechas de SQL a Java"
+        ] 
+    },
+    { 
+        "titulo": "PROGRAMACIÓN ORIENTADA A OBJETOS APLICADA A BASES DE DATOS", 
+        "subtemas": [
+            "Introducción a POO aplicada a bases de datos",
+            "Creación de la capa de entidades (Entity)",
+            "Creación de la capa de utilidades (Util)",
+            "Implementación de la capa de acceso a datos (DAO - Data Access Object)",
+            "Relacionamiento de tablas en Java mediante llaves foráneas"
+        ] 
+    },
+    { 
+        "titulo": "DESARROLLO DE INTERFACES GRÁFICAS Y FORMULARIOS", 
+        "subtemas": [
+            "Creación y Personalización de Formularios",
+            "Diseño y estructuración de formularios internos",
+            "Captura y validación de datos en formularios",
+            "Implementación de eventos y manejo de excepciones"
+        ] 
+    },
+    { 
+        "titulo": "GENERACIÓN DE REPORTES CON JASPERSOFT", 
+        "subtemas": [
+            "Instalación y configuración de Jaspersoft Studio",
+            "Creación y Configuración de Reportes",
+            "Generación de reportes dinámicos en Java",
+            "Conexión de reportes con bases de datos",
+            "Implementación de reportes parametrizados"
+        ] 
+    },
+    { 
+        "titulo": "OPTIMIZACIÓN Y PROCEDIMIENTOS ALMACENADOS", 
+        "subtemas": [
+            "Introducción a los procedimientos almacenados en MySQL y SQL Server",
+            "Creación y ejecución de procedimientos almacenados sin parámetros",
+            "Uso de parámetros de entrada y salida en procedimientos almacenados",
+            "Integración de procedimientos almacenados en Java"
+        ] 
+    }
+]
+,
     "SISTEMAS OPERATIVOS LINUX": [
-        { titulo: "INTRODUCCIÓN A LINUX", subtemas: ["Historia de Linux", "Distribuciones populares"] },
-        { titulo: "COMANDOS BÁSICOS", subtemas: ["Navegación en la terminal", "Gestión de archivos"] },
-        { titulo: "ADMINISTRACIÓN DEL SISTEMA", subtemas: ["Gestión de usuarios", "Permisos y seguridad"] }
+        { titulo: "INSTALACIÓN Y CONFIGURACIÓN DEL SISTEMA OPERATIVO UBUNTU", subtemas: ["Introducción a linux y su ecosistema", "Configuración inicial del sistema operativo ubuntu"] },
+        { titulo: "PERSONALIZACIÓN Y USO DEL ENTORNO DE UBUNTU", subtemas: ["Personalización del escritorio y la interfaz grafica", "Introducción a la terminal de linux", "Navegación en el sistema de archivos (pwd, ls, cd y cd /, Rutas relativas y Absolutas)"] },
+        { titulo: "GESTIÓN DE ARCHIVOS Y DIRECTORIOS", subtemas: ["Exploración avanzada con ls -R (-l, -a, -R)", "Uso del manual de comandos con man", "Creación y manipulación de archivos (nano, cat, head y tail, touch y rm)", "Gestión de directorios (mkdir, rmdir, cp y cp -r, mv)", "Busqueda y gestión de contenidos (grep)"] },
+        { titulo: "ADMINISTRACIÓN Y MANTENIMIENTO DEL SISTEMA", subtemas: ["Actualización del sistema operativo y gestión de paquetes", "Administración de usuarios y permisos", "Gestión de permisos en archivos y directorios", "Archivos especiales y enlacces simbolicos"] },
+        { titulo: "CONFIGURACIÓN Y ADMINISTRACIÓN DE REDES", subtemas: ["Configuración básica de red en Linux"] },
+        { titulo: "ESTRUCTURA DE ARRANQUE Y GESTIÓN DEL SISTEMA", subtemas: ["Estructura y fases del proceso de arranque"] },
     ],
-    "JAVASCRIPT AVANZADO": [
-        { titulo: "PROGRAMACIÓN ASÍNCRONA", subtemas: ["Callbacks", "Promises", "Async/Await"] },
-        { titulo: "MANEJO DEL DOM", subtemas: ["Eventos", "Manipulación de elementos HTML"] },
-        { titulo: "FRAMEWORKS POPULARES", subtemas: ["React.js", "Vue.js", "Angular"] }
+    "BASE DE DATOS AVANZADO": [
+        { titulo: "INTRODUCCIÓN A SQL SERVER Y SU ENTORNO", subtemas: ["Interfaz gráfica de SQL Server Management Studio (SSMS)", "Configuración Inicial", "Base de datos del sistema y su proposito"] },
+        { titulo: "CREACIÓN DE Y PERSONALIZACIÓN DE BASE DE DATOS", subtemas: ["Creación y configuración de una base de datos", "Creación de tablas y definición de atributos", "Modificación de estructuras", "Tipos de datos en SQL", "Integridad Referencial y claves foráneas (FOREIGNK KEY)"] },
+        { titulo: "MANIPULACIÓN DE DATOS EN SQL", subtemas: ["Inserción de datos en una tabla (INSERT)", "Diferentes formas de estructurar datos en SQL", "Actualización de registros (UPDATE)"] },
+        { titulo: "CONSULTAS SQL Y USO DE OPERACIONES", subtemas: ["Introducción a consultas SQL", "¿Qué es SELECT y como usarlo?", "Clausulas y operadores básicos (AND, OR, BETWEEN, IN, LIKE '%')", "Consultas combinadas y expresión CASE", "Uso de ORDER BY ASC/DESC"] },
+        { titulo: "FUNCIONES Y CONSULTAS AVANZADAS", subtemas: ["Funciones de agregación en SQL (SUM, AVG, COUNT, etc.)", "Consultas con predicados"] },
+        { titulo: "ADMINISTRACIÓN DE BASES DE DATOS Y PROCEDIMIENTOS ALMACENADOS", subtemas: ["Base de datos NorthWind y su aplicación en consultas", "Creación y gestión de vistas en SQL", "Creación de procedimientos almacenados con y sin parametros", "Autogeneración de codigo secuencial (números y letras)", "Estructuras condicionales IF - ELSE dentro de un procedure"] },
+    { titulo: "OPTIMIZACIÓN Y SEGURIDAD EN SQL", subtemas: ["Búsqueda sensitiva dentro de un SP"] }
     ],
     "TÉCNICAS DE PROGRAMACIÓN ORIENTADA A OBJETOS": [
         { titulo: "INTRODUCCIÓN A LA PROGRAMACIÓN ORIENTADA A OBJETOS", subtemas: ["¿Qué es la POO?"] },

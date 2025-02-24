@@ -256,3 +256,14 @@ body {
         width: 120px;
     }
 }
+
+.original-price {
+    text-decoration: line-through;
+    color: #888;
+    margin-right: 5px;
+}
+
+.discounted-price {
+    color: #d32f2f;
+    font-weight: bold;
+}

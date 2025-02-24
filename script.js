@@ -15,17 +15,17 @@ function mostrarDocs(ciclo) {
         2: [
             { nombre: "CABLEADO ESTRUCTURADO", precio: "----", imagen: "img/Word.png", enCurso: true },
             { nombre: "IT ESSENTIALS - CONECTIVIDAD", precio: "----", imagen: "img/Word.png", enCurso: true },
-            { nombre: "TÉCNICAS DE PROGRAMACIÓN ORIENTADA A OBJETOS", precio: "150", imagen: "img/Word.png"},
+            { nombre: "TÉCNICAS DE PROGRAMACIÓN ORIENTADA A OBJETOS", precio: "99.9", imagen: "img/Word.png"},
             { nombre: "BASE DE DATOS", precio: "----", imagen: "img/Word.png", enCurso: true},
-            { nombre: "ESTRUCTURA DE DATOS", precio: "150", imagen: "img/Word.png"}
+            { nombre: "ESTRUCTURA DE DATOS", precio: "99.9", imagen: "img/Word.png"}
             
         ],
         3: [
             { nombre: "ANALISIS Y DISEÑO DE SISTEMAS", precio: "----", imagen: "img/Word.png", enCurso: true },
-            { nombre: "BASE DE DATOS AVANZADO", precio: "----", imagen: "img/Word.png" },
-            { nombre: "LENGUAJE DE PROGRAMACIÓN JAVA", precio: "----", imagen: "img/Word.png" },
+            { nombre: "BASE DE DATOS AVANZADO", precio: "119.0", imagen: "img/Word.png" },
+            { nombre: "LENGUAJE DE PROGRAMACIÓN JAVA", precio: "149.0", imagen: "img/Word.png" },
             { nombre: "DESARROLLO DE SOLUCIONES EMPRESARIALES", precio: "----", imagen: "img/Word.png" },
-            { nombre: "SISTEMAS OPERATIVOS LINUX", precio: "----", imagen: "img/Word.png" }
+            { nombre: "SISTEMAS OPERATIVOS LINUX", precio: "120", imagen: "img/Word.png" }
         ],
         4: [
             { nombre: "APLICACIONES WEB", precio: "----", imagen: "img/Word.png", enCurso: true },
