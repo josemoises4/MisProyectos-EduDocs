@@ -26,9 +26,13 @@ const contenidos = {
         { titulo: "FRAMEWORKS POPULARES", subtemas: ["React.js", "Vue.js", "Angular"] }
     ],
     "TÉCNICAS DE PROGRAMACIÓN ORIENTADA A OBJETOS": [
-        { titulo: "PRINCIPIOS BÁSICOS", subtemas: ["Abstracción", "Encapsulación", "Modularidad"] },
-        { titulo: "PATRONES DE DISEÑO", subtemas: ["Singleton", "Factory", "Observer"] },
-        { titulo: "BUENAS PRÁCTICAS", subtemas: ["Código limpio", "Reutilización", "SOLID"] }
+        { titulo: "INTRODUCCIÓN A LA PROGRAMACIÓN ORIENTADA A OBJETOS", subtemas: ["¿Qué es la POO?"] },
+        { titulo: "GESTIÓN Y MANIPULACIÓN DE ARREGLOS", subtemas: ["Concepto y uso de arreglos en Java"] },
+        { titulo: "PRINCIPIOS DE HERENCIA", subtemas: ["Fundamentos y beneficios de la herencia", "Implementación de la herencia"] },
+        { titulo: "MANEJO DE FECHAS Y TIEMPOS", subtemas: ["Métodos y clases para la gestión de fechas"] },
+        { titulo: "DESARROLLO DE INTERFACES CON FORMULARIOS INTERNOS", subtemas: ["Definición y aplicación de formularios internos"] },
+        { titulo: "GESTIÓN DE ARCHIVOS (Bloc de notas)", subtemas: ["Introducción al manejo de archivos", "Aplicación POO en la gestión de archivos", "Integración del manejo de archivos con fechas"] },
+        { titulo: "ARQUITECTURA EN 3 CAPAS CON POO", subtemas: ["Diseño y estructura: Entity, DAO y Controller", "Organización por capas: Datos, Lógica y Presentación"] },
     ]
 };
 
