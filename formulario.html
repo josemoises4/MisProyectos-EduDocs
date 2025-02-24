@@ -8,33 +8,42 @@
 </head>
 <body>
 
-    <div class="container">
-        <div class="form-container">
-            <h2>Formulario de Compra</h2>
-            <form id="form-compra">
-                <div class="form-group">
-                    <label for="curso">Curso:</label>
-                    <select id="curso">
-                        <!-- Se llenará dinámicamente -->
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
-                </div>
-                <div class="form-group">
-                    <label for="correo">Correo Electrónico:</label>
-                    <input type="email" id="correo" placeholder="Ingresa tu correo" required>
-                </div>
-                <div class="form-group">
-                    <label for="metodoPago">Método de Pago:</label>
-                    <select id="metodoPago">
-                        <option value="paypal">PayPal</option>
-                        <option value="yape">YAPE</option>
-                    </select>
-                </div>
-                <button type="submit">Finalizar Compra</button>
-            </form>
+    <div class="main-container"> <!-- Nuevo contenedor padre -->
+        <div class="container">
+            <div class="form-container">
+                <h2>Formulario de Compra</h2>
+                <form id="form-compra">
+                    <div class="form-group">
+                        <label for="curso">Curso:</label>
+                        <select id="curso">
+                            <!-- Se llenará dinámicamente -->
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo Electrónico:</label>
+                        <input type="email" id="correo" placeholder="Ingresa tu correo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="metodoPago">Método de Pago:</label>
+                        <select id="metodoPago">
+                            <option value="yape">YAPE</option>
+                        </select>
+                    </div>
+                    <button type="submit">ENVIAR</button>
+                </form>
+            </div>
+        </div>
+
+        <div id="qrContainer">
+            <img id="qrImage" src="IMG/MiYapeQR.png" alt="QR Yape">
+            <div id="qrButtons">
+                <button id="btnComprado">He comprado</button>
+                <button id="btnNoComprado">No he comprado</button>
+            </div>
         </div>
     </div>
 
